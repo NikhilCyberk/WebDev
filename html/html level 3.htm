@@ -1,0 +1,332 @@
+<!-- This is an HTML code that creates a webpage with various elements such 
+    as tables, forms, and labels. The code includes different attributes 
+    and tags such as `<table>`, `<thead>`, `<tbody>`, `<th>`, `<tr>`, 
+    `<td>`, `<caption>`, `<input>`, `<label>`, etc. These elements 
+    are used to structure and display data in a tabular format,
+    create forms for user input, and provide labels for input 
+    fields. The code also includes some CSS styling such as border
+        color for tables. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html level 3</title>
+</head>
+<body>
+    <h1>HTML level 3</h1>
+<hr>
+    <h4>Table</h4>
+    <table border="black"><!--border = "black" it is apart of css-->
+        <tr>
+            <th>Item</thx>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>fruti</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>samosa</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>kchori</td>
+            <td>30</td>
+        </tr>
+        <caption>Food Menu</caption>
+        
+    </table>
+    <hr>
+    <h4>semantic in table</h4>
+    <table >
+        <!-- table header-->
+        <thead>
+            
+            <tr>
+                <th>Item</thx>
+                    <th>price</th>
+                </tr>
+        </thead>
+        <!--table body-->
+        <tbody>
+
+            <tr>
+                <td>fruti</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>samosa</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>kchori</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+            <caption>Food Menu</caption>
+            
+    </table>
+<hr>
+    <h4><u>
+        rowspan and columnspan attributes
+    </u>
+    </h4>
+
+<table border="black">
+        <!-- table header-->
+        <thead>
+            
+            <tr>
+                <th rowspan="2">Item</thx>
+                <th colspan="2">price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <!--table body--> 
+        <tbody>
+
+            <tr>
+                <td>fruti</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>samosa</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>kchori</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+            <caption>Food Menu</caption>
+            
+    </table>
+<hr>
+    <h4><u>practice ques ??</u></h4>
+    <table border="black">
+
+        <caption> a test table with merge cell</caption>
+        <tr>
+            <th rowspan="2"> </th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+       </tr>
+       <tr>
+        <th>Female</th>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+   </tr>
+    </table>
+    <hr>
+<h4><u> forms in html </u></h4>
+
+<form action="/server">
+<li>input type attribute</li>
+
+text<input type="text"><br>
+password <input type="password"><br>
+number <input type="number"><br>
+time <input type="time"><br>
+color <input type="color"><br>
+<hr>
+<h4><u>placeholder attribute</u></h4>
+
+
+text<input type="text" placeholder="enter text">enter text is place holder<br>
+password <input type="password" placeholder="enter password">enter password is placeholder<br>
+number <input type="number" placeholder="enter number">enter number is placeholder<br>
+time <input type="time" ><br>
+color <input type="color"><br>
+<hr>
+<h4 ><u>label</u></h4>
+<p>label provide a connection b/w text and input when you click text it automatically <br>
+go in the input tag becuse og label tag 
+</p>
+<label>
+    text<input type="text"><br>
+
+</label>
+<label>
+
+    password <input type="password"><br>
+</label><label>
+
+    number <input type="number"><br>
+</label><label>
+
+    time <input type="time"><br>
+</label>
+<label>
+
+    color <input type="color"><br>
+</label>
+<hr>
+<h4><u>classical approach for label</u></h4>
+<P>this is the classical approach for label</P>
+
+<div>
+
+    <label for ="username">enter your user name &nbsp;&nbsp;</label>
+    <input type="text" id ="username" placeholder="username">
+</div>
+
+<div>
+
+    <label for ="password">enter your user passwd</label>
+    <input type="passsword" id ="password" placeholder="password">
+</div>
+<div>
+
+    <label for ="age">enter your user age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" id ="age" placeholder="age">
+</div>
+<hr>
+<h4><u>button elements</u></h4>
+
+<button>Submit</button>
+<hr>
+<h4><u>button type</u></h4>
+<button type="submit">submit</button>
+<button type="reset">reset</button>
+<button type="button"> button</button>
+<hr>
+<h4><u>button using input element</u></h4>
+
+<input type="button" value="click me">
+<input type="submit">
+<hr>
+</form> 
+<h4><u>name attributes</u></h>
+<form action="https://www.youtube.com/results">
+    youtube search
+    <input type="text" name="search_query" id="search_query" placeholder="youtube search">
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<h4><u>practice question</u></h4>
+<form action="https://www.google.com/search">
+    Google Search
+    <input type="text" name="q" id="q" placeholder="Google Search">
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<h4><u>checkbox</u></h4>
+<form action="/server">
+    <input type="checkbox" name="age" id="age"/>
+    <label for="age">I am 18+</label>
+
+    <input type="checkbox" name="male" id="male" checked/>
+    <label for="male">Male</label>
+    <button type="submit">Submit</button>
+    <hr>
+    <h4><u>radio button</u></h4>
+    <div>
+        <input type="radio" name="radiobutton" id="radiobutton1" value="radiobutton1"/>
+        <label for="radiobutton1">Radio Button 1</label>
+        <input type="radio" name="radiobutton" id="radiobutton2"value="radiobutton2"/>
+        <label for="radiobutton2">Radio Button 2</label>
+        <input type="radio" name="radiobutton" id="radiobutton3"value="radiobutton3"/>
+        <label for="radiobutton3">Radio Button 3</label>    
+    </div>
+    <button>Submit</button>
+    <br>
+    <b>
+
+        Choose your subject
+    </b>
+    <div>
+        <input type="radio" name="subject" id="English" value="English"/>
+        <label for="English">English</label>
+        <input type="radio" name="subject" id="Hindi"value="Hindi"/>
+        <label for="Hindi">Hindi</label>
+        <input type="radio" name="subject" id="Math"value="Math"/>
+        <label for="Math">Math</label>    
+    </div>
+    <button>Submit</button>
+
+</form>
+<hr>
+<h4><u>select element </u></h4>
+<h4>dropdown</h4>
+<div>
+    choose your professions 
+    <select name="profession" id="profession">
+        <option>select your option</option>
+        <option value="student">Student</option>
+        <option value="dev">developer</option>
+    </select>
+</div>
+    <hr>
+    <form action ="/server">
+
+        <h4>
+            <u>
+                Range
+            </u>
+        </h4>
+        <input type="range" min="0" max="100" name="vol">
+        <label for="vol">Volume</label>
+        <button>Submit</button>
+
+        <hr>
+        <h4>
+            <u>
+                text area
+            </u>
+        </h4>
+        <label for="feedback">please provide feedback</label>
+        <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="write feedback"></textarea>
+        <button>Submit</button>
+    </form>
+        <hr>
+        <h4>
+                    <u>
+                        practice question
+                    </u>
+                </h4>
+<form action="/server">
+    <h3>Registration Form</h3>
+    <div>
+        <input type="text" placeholder="first name" name="first">
+        <input type="text" placeholder="last name" name="last">
+        
+            </div>
+    <div>
+        <b>Please select gender
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <b>Do you agree to all terms and conditions
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Yes, I agree</label>
+    </div>
+    <button>Register</button>
+
+
+</form>
+
+
+
+</body>
+</html>

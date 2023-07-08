@@ -1,0 +1,111 @@
+
+/* alpha channel */
+#alpha_channel{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(198, 33, 33, 0.401);
+    border: 2px solid;
+}
+/* opacity */
+#opacity{
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    background-color: rgb(76, 76, 185);
+    opacity: 0.5;
+}
+/* css transtion */
+#transition{
+    height: 150px;
+    width: 150px;
+    border: 2px solid;
+    background-color: blueviolet;
+    transition: 1s;
+}
+#transition:hover{
+
+    background-color: aqua;
+    border-radius: 50%;
+}
+/* transform */
+
+/* 1.rotate */
+#rotate{
+    height: 100px;
+    width: 50px;
+    background-color: cadetblue;
+    transition: 1s 0.5s;
+}
+#rotate:hover{
+    transform: rotate(40deg);
+}
+
+/* 2. scale */
+#scale{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(95, 195, 42);
+    transition: 1s 0.3s;
+}
+#scale:hover{
+    transform: scale(1.5);
+}
+/* 3 translate */
+#translate{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(67, 42, 195);
+    transition: 1s 0.3s;
+}
+#translate:hover{
+    transform: translate(50px,50px) ;
+}
+
+#translate2{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(106, 23, 123);
+    transition: 1s 0.3s;
+}
+#translate2:hover{
+    transform: translateX(10px) ;
+}
+#translate3{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(185, 42, 195);
+    transition: 1s 0.3s;
+}
+#translate3:hover{
+    transform: translateY(10px) ;
+}
+/* 4. skew */
+
+#skew{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(195, 42, 73);
+    transition: 1s 0.3s;
+}
+#skew:hover{
+    transform: skew(30deg) ;
+}
+
+/* bax shadow */
+
+#bax-shadow{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(198, 33, 33, 0.401);
+    border: 2px solid;
+    box-shadow: 100px 50px 10px blue;
+}
+
+/* background-image */
+#background-image{
+    height: 300px;
+    width: auto;
+    color: rgb(250, 18, 184);
+    background-image: url(0.jpg);
+    background-size: contain;
+}
